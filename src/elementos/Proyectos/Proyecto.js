@@ -1,10 +1,14 @@
 import styled, { css } from "styled-components";
 
 let Proyecto = styled.div`
-  background: rgb(0 0 0 / 63%);
-  width: 40%;
+  background: rgb(0 0 0);
+  width: auto;
   height: 500px;
   margin: 60px 40px;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  z-index: 4;
   ${(props) =>
     props.Descripcion &&
     css`

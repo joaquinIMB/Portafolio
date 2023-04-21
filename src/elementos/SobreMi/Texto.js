@@ -9,9 +9,9 @@ const Texto = styled.p`
   font-size: 22px;
   font-weight: 500;
   letter-spacing: 2px;
-  color: #ececec;
+  color: #ffffff;
   position: relative;
-  left: -70px;
+  left: -20px;
 `;
 
 export default Texto;

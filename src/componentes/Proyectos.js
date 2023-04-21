@@ -13,9 +13,13 @@ const Proyectos = () => {
     <>
       {cerrado === false ? (
         <ContenedorProyectos>
-          <SeccionProyecto onClick={() => abrirSeccion(true)}>
+          <SeccionProyecto>
             <TituloProy>Proyectos</TituloProy>
-            <Icono src="img/flecha.png" alt="Flechas" />
+            <Icono
+              src="img/flecha.png"
+              alt="Flechas"
+              onClick={() => abrirSeccion(true)}
+            />
           </SeccionProyecto>
           <ContenedorProyectos ContenedorImgTexto>
             <Proyecto></Proyecto>
@@ -24,9 +28,15 @@ const Proyectos = () => {
         </ContenedorProyectos>
       ) : (
         <ContenedorProyectos>
-          <SeccionProyecto SeccionAbierta onClick={() => abrirSeccion(false)}>
+          <SeccionProyecto SeccionAbierta>
             <TituloProy TituloProy>Proyectos</TituloProy>
-            <Icono src="img/flecha-invertida.png" alt="Flechas" />
+            <Icono IconoAdaptable1 src="img/Icons/click.png" alt="Proyecto" />
+            <Icono
+              IconoAdaptable
+              src="img/flecha-invertida.png"
+              alt="Flechas"
+              onClick={() => abrirSeccion(false)}
+            />
           </SeccionProyecto>
           <ContenedorProyectos ContenedorImgTexto>
             <Proyecto></Proyecto>

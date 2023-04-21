@@ -15,6 +15,15 @@ const Titulos = styled.h1`
       text-align: end;
       color: #3f3f87;
       text-shadow: none;
+      animation: movimiento 0.8s ease;
+      @keyframes movimiento {
+        0% {
+          left: 400px;
+        }
+        100% {
+          left: 0;
+        }
+      }
     `}
 `;
 

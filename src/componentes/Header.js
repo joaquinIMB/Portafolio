@@ -10,7 +10,6 @@ const Header = () => {
       <ContenedorHeader>
         <Nombre>Joaquin Imbriago</Nombre>
         <ContenedorSecciones>
-          <Secciones>Sobre Mi</Secciones>
           <Secciones>Proyectos</Secciones>
           <Secciones>Habilidades</Secciones>
           <Secciones>Contacto</Secciones>

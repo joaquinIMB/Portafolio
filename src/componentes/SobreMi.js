@@ -16,10 +16,8 @@ const SobreMi = () => {
         </Iconos>
         <Texto>
           Desde pequeño estuve familiarizado con la IT. Un día gracias a mi
-          primo, que me ayudó a orientarme e incentivarme, decidí comenzar. Me
-          especializo en el área de Front End desde el comienzo. Actualmente, me
-          encuentro estudiando un curso de REACT a punto de desarrollar MI
-          PRIMER APP.
+          primo, que me ayudó a orientarme e incentivarme, decidí iniciar mis
+          estudios. Me especializo en el área de Front End desde el comienzo.
         </Texto>
         <Iconos iconoComputadora>
           <img

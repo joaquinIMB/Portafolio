@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 const Iconos = styled.div`
   position: absolute;
   z-index: 1;
-  opacity: 0.6;
+  opacity: 0.5;
   height: auto;
   ${(props) =>
     props.iconoComputadora &&

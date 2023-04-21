@@ -6,7 +6,7 @@ const ContenedorHeader = styled.div`
   transition: 0.5s all ease;
   text-align: center;
   background: #ececec;
-  box-shadow: 0px 0.2px 1px #000000;
+  box-shadow: rgb(0 0 0 / 15%) 0px 0.5px 5px;
   display: flex;
   justify-content: space-between;
   position: sticky;

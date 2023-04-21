@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 const SeccionProyecto = styled.div`
-  width: 20%;
+  width: 28%;
   height: 70px;
   margin: 0px 0px 30px;
   background: linear-gradient(
@@ -8,10 +8,10 @@ const SeccionProyecto = styled.div`
     rgba(67, 90, 166, 1),
     rgba(83, 50, 143, 1)
   );
-  border-radius: 0px 5px 5px 0px;
-  box-shadow: rgb(0, 0, 0) 0px 1.5px 2px;
+  border-radius: 0px 5px 0px 0px;
+  box-shadow: rgb(0 0 0 / 57%) -2px 1.5px 5px;
   position: relative;
-  cursor: pointer;
+  top: 20px;
   display: flex;
   justify-content: space-around;
   transition: all 0.6s ease;
@@ -27,8 +27,8 @@ const SeccionProyecto = styled.div`
     position: absolute;
     transform: scaleX(0);
     transform-origin: left;
-    border-radius: 0px 5px 5px 0px;
-    transition: transform 0.3s ease;
+    border-radius: 0px 5px 0px 0px;
+    transition: transform 0.5s ease;
   }
   &:hover::before {
     transform: scaleX(1);
@@ -39,8 +39,8 @@ const SeccionProyecto = styled.div`
   ${(props) =>
     props.SeccionAbierta &&
     css`
-      width: 80%;
-      justify-content: right;
+      width: 60%;
+      justify-content: end;
       animation: abrirDos 1.2s ease;
       &::before {
         content: "";
@@ -51,10 +51,10 @@ const SeccionProyecto = styled.div`
       }
       @keyframes abrirDos {
         0% {
-          width: 20%;
+          width: 28%;
         }
         100% {
-          width: 80%;
+          width: 60%;
         }
       }
       @keyframes abrir {

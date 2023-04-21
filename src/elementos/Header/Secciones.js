@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Secciones = styled.li`
-  margin: auto;
+  margin: auto 0;
   cursor: pointer;
   color: #8585ff;
   transition: all 0.3s ease;

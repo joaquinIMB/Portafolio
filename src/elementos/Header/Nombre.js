@@ -8,6 +8,7 @@ const Nombre = styled.h2`
   color: rgb(97, 97, 255);
   letter-spacing: 1px;
   text-shadow: rgb(176, 196, 246) 0px 1px 1px;
+  animation: aparecer 2s ease;
 `;
 
 export default Nombre;
