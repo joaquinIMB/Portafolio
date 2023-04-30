@@ -1,0 +1,93 @@
+.contenedor_misProyectos{
+    max-width:100%;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+    background: #0c0c0c;
+}
+.misProyectos{
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.contenedor-proyectos__misProyectos{
+    width: 350px;
+    margin: auto;
+    position: relative;
+    flex-direction: column;
+    align-content: center;
+}
+.contenedor-imagen__misProyectos{
+    width: 100%;
+    height: 49%;
+    background: #000;
+    transition: 0.4s all ease;
+    padding-bottom: 70%;
+    opacity: 1;
+}
+
+
+.imagen-proyecto__misProyectos{
+    position: absolute;
+    background: #000;
+    top: 4em;
+    left: 6.7em;
+}
+.contenedor-hover-imagen__misProyectos{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s all ease;
+    z-index: 777;
+}
+.contenedor-hover-imagen__misProyectos:hover{
+    opacity: 1;
+
+}
+.contenedor-icon-hover__misProyectos{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30%;
+    gap: 26px;
+}
+.icon-hover-imagen__misProyectos{
+    width:4rem;
+    height:4rem;
+}
+.contenedor-descripcion__misProyectos{
+    width: 100%;
+    height: 50%;
+    padding-top: 15%;
+    background: #0c0c0c;
+    border: 1px solid #0c0c0c;
+    font-family: "Roboto Slab", serif;
+    padding: 5px;
+}
+
+
+.titulo-descripcion__misProyectos{
+    color: #6161ff;
+    letter-spacing: 2px;
+    font-size: 26px;
+    margin: 5px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffffff1f;
+}
+
+.texto-descripcion__misProyectos{
+    color: #fff;
+    letter-spacing: 1.2px;
+    font-size: 18px;
+}
+

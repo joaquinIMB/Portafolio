@@ -1,33 +1,21 @@
 import React from "react";
-import Titulos from "./../elementos/SobreMi/Titulos";
-import Banner from "./../elementos/SobreMi/Banner";
-import Contenedor from "./../elementos/SobreMi/Contenedor";
-import Iconos from "./../elementos/SobreMi/Iconos";
-import Texto from "./../elementos/SobreMi/Texto";
+import "./SobreMi.css"
 
 const SobreMi = () => {
   return (
-    <Contenedor>
-      <Titulos>Desarrollador Web</Titulos>
-      <Titulos segundoTitulo>Front End</Titulos>
-      <Banner>
-        <Iconos>
-          <img src="img/Icons/react.png" width={"260px"} alt="React" />
-        </Iconos>
-        <Texto>
-          Desde pequeño estuve familiarizado con la IT. Un día gracias a mi
-          primo, que me ayudó a orientarme e incentivarme, decidí iniciar mis
-          estudios. Me especializo en el área de Front End desde el comienzo.
-        </Texto>
-        <Iconos iconoComputadora>
-          <img
-            src="img/Icons/computadora.png"
-            width={"260px"}
-            alt="Computer3D"
-          />
-        </Iconos>
-      </Banner>
-    </Contenedor>
+    <section className="contenedor-SobreMi">
+      <h1 className="titulo-vertical__SobreMi">Front <span style={{color: "#fff"}}>End</span></h1>
+      <aside className="aside-SobreMi">
+      <h1 className="titulo-horizontal__SobreMi">Desarrollador Web</h1>
+        <p className="texto-SobreMi">
+          Apasionado por la tecnología, actualmente incursionando en el <span className="span-texto__SobreMi">Desarrollo Web. </span>
+          Estudiante <span className="span-texto__SobreMi">autónomo</span>, plagado de curiosidad y en constante crecimiento. 
+          Actualmente realizando proyectos personales, capacitado en <span className="span-texto__SobreMi">UI</span> para crear experiencias de usuario confortables.
+
+        </p>
+      </aside>
+      <h1 className="titulo-vertical-derecho__SobreMi">Front <span style={{color: "#fff"}}>End</span></h1>
+    </section>
   );
 };
 

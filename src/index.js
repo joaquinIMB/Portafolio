@@ -1,18 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import SobreMi from "./componentes/SobreMi";
-import Header from "./componentes/Header";
-import Proyectos from "./componentes/Proyectos";
-
-const Main = () => {
-  return (
-    <>
-      <Header />
-      <SobreMi />
-      <Proyectos />
-    </>
-  );
-};
+import App from "./App";
+import "./index.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Main />);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
