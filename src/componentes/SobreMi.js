@@ -10,7 +10,7 @@ const SobreMi = () => {
         <p className="texto-SobreMi">
           Apasionado por la tecnología, actualmente incursionando en el <span className="span-texto__SobreMi">Desarrollo Web. </span>
           Estudiante <span className="span-texto__SobreMi">autónomo</span>, plagado de curiosidad y en constante crecimiento. 
-          Actualmente realizando proyectos personales, capacitado en <span className="span-texto__SobreMi">UI</span> para crear experiencias de usuario confortables.
+          Actualmente realizando proyectos personales, <span className="span-texto__SobreMi">capacitado</span> para crear <span className="span-texto__SobreMi">experiencias de usuario</span> confortables.
 
         </p>
       </aside>

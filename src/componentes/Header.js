@@ -10,9 +10,9 @@ const Header = () => {
       <ContenedorHeader>
         <Nombre>Joaquin Imbriago</Nombre>
         <ContenedorSecciones>
+          <Secciones>Sobre mi</Secciones>
           <Secciones>Proyectos</Secciones>
           <Secciones>Habilidades</Secciones>
-          <Secciones>Contacto</Secciones>
         </ContenedorSecciones>
       </ContenedorHeader>
     </>

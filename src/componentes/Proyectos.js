@@ -11,7 +11,7 @@ import imagenProyecto2 from "../assets/img/ToDoList.png"
 import logo1Proyecto2 from "../assets/img/Icons/react1.png"
 
 const logosProyecto1 = [logo1Proyecto1, logo2Proyecto1, logo3Proyecto1]
-const logosProyecto2 = [logo1Proyecto2]
+const logosProyecto2 = [ logo1Proyecto2 ]
 
 const Proyectos = () => {
 
@@ -29,7 +29,7 @@ const Proyectos = () => {
       imagen={imagenProyecto2}
       logosHover={logosProyecto2} 
       titulo={"To Do List"} 
-      descripcion={"Lista de tareas creada con React. Adaptable a dispositivos móviles. En ésta lista podemos agendar tareas para hacer guardadas en LocalStorage. Cuenta con botones para mostrar u ocultar las tareas completatas, también podemos editar o borrar las mismas."}
+      descripcion={"Lista de tareas creada con React. Adaptable a dispositivos móviles. En ésta lista podemos agendar tareas para hacer, las mismas se mantendran guardadas en LocalStorage. Cuenta con botones para mostrar u ocultar las tareas completatas, también podemos editar o borrar las mismas."}
       enlace={"https://listadetareas-joaquinimbriago.netlify.app/"} />
     </div>
     </div>

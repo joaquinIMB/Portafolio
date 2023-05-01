@@ -5,7 +5,7 @@ const Nombre = styled.h2`
   margin: 10px;
   align-self: center;
   font:  500 28px Cookie, cursive;
-  color: rgb(57 57 57);
+  color: #525252;
   letter-spacing: 1px;
   animation: aparecer 2s ease;
 `;
