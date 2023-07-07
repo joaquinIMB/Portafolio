@@ -1,36 +1,70 @@
 import React from "react";
 import "./proyectos.css";
-
-const AgregaProyecto = ({imagen,logosHover,titulo,enlace}) => {
+import { misProyectos } from "../elementos/misProyectos";
+import logoGitHub from "./../assets/img/Icons/GitHub.png";
+const AgregaProyecto = () => {
   return (
-    <div className="contenedor-proyectos__misProyectos">
-      <div className="contenedor-imagen__misProyectos">
-        <img
-          src={imagen}
-          alt={imagen.name}
-          className="imagen-proyecto__misProyectos"
-        />
-        <div className="contenedor-hover-imagen__misProyectos">
-          <a href={enlace}>
-            <span className="contenedor-icon-hover__misProyectos">
-              {logosHover.length > 0
-                ? logosHover.map((icono, index) => (
+    <>
+      {misProyectos.map((proyecto) => {
+        return (
+          <div key={proyecto.id} className="contenedor-proyectos__misProyectos">
+            <div className="contenedor-imagen__misProyectos">
+              <img
+                src={proyecto.imagen}
+                alt={proyecto.titulo}
+                className="imagen-proyecto__misProyectos"
+              />
+            </div>
+            <div className="contenedor-hover__misProyectos">
+              <header className="header_misProyectos">
+                <a
+                  className="enlace-repositorio_misProyectos"
+                  href={proyecto.repositorio}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="logoGitHub_misProyectos"
+                    src={logoGitHub}
+                    alt="Enlace para ir al repositorio"
+                  />
+                </a>
+                <h2 className="titulo_misProyectos">{proyecto.titulo}</h2>
+                <button className="boton_misProyectos">
+                  <a
+                    className="enlace_misProyectos"
+                    href={proyecto.enlace}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    DEMO
+                  </a>
+                </button>
+              </header>
+              <section className="contenedor-descripcion-logos_misProyectos">
+                <article className="contenedor-descripcion_misProyectos">
+                  {proyecto.descripcion && (
+                    <p className="descripcion_misProyectos">
+                      {proyecto.descripcion}
+                    </p>
+                  )}
+                </article>
+                <aside className="contenedor-logos_misProyectos">
+                  {proyecto.logos.map((logoProyecto, index) => (
                     <img
-                      className="icon-hover-imagen__misProyectos"
-                      alt="icono"
-                      src={[icono]}
                       key={index}
+                      className="logos_misProyectos"
+                      src={logoProyecto}
+                      alt={`${logoProyecto} proyecto ${index}`}
                     />
-                  ))
-                : console.log("")}
-            </span>
-          </a>
-        </div>
-      </div>
-      <div className="contenedor-descripcion__misProyectos">
-        <h2 className="titulo-descripcion__misProyectos">{titulo}</h2>
-      </div>
-    </div>
+                  ))}
+                </aside>
+              </section>
+            </div>
+          </div>
+        );
+      })}
+    </>
   );
 };
 

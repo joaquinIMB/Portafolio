@@ -2,16 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const Header = () => {
-    window.addEventListener("scroll", () => {
+  window.addEventListener("scroll", () => {
     let contenedorHeader = document.getElementById("contenedorHeader");
-    if(window.scrollY >= 40){
-      contenedorHeader.style.boxShadow ="0px 3px 15px #0000001a";
-      contenedorHeader.style.backdropFilter = "blur(8px)"
-      contenedorHeader.style.background = "#00000090"
-    }else{
-      contenedorHeader.style.boxShadow ="none";
-      contenedorHeader.style.backdropFilter = "blur(0px)"
-      contenedorHeader.style.background = "transparent"
+    if (window.scrollY > 60) {
+      contenedorHeader.style.display = "flex";
+    } else {
+      contenedorHeader.style.display = "none";
     }
   });
 
@@ -20,13 +16,19 @@ const Header = () => {
       <ContenedorHeader id="contenedorHeader">
         <ContenedorSecciones>
           <Secciones>
-            <a className="enlace" href="#sobre-mi">Sobre mi</a>
+            <a className="enlace" href="#sobre-mi">
+              Sobre mi
+            </a>
           </Secciones>
           <Secciones>
-            <a className="enlace" href="#sobre-mi">Habilidades</a>
+            <a className="enlace" href="#sobre-mi">
+              Habilidades
+            </a>
           </Secciones>
           <Secciones>
-            <a className="enlace" href="#proyectos">Proyectos</a>
+            <a className="enlace" href="#proyectos">
+              Proyectos
+            </a>
           </Secciones>
         </ContenedorSecciones>
       </ContenedorHeader>
@@ -36,13 +38,17 @@ const Header = () => {
 
 const ContenedorHeader = styled.div`
   width: 100%;
-  display: flex;
+  display:none;
   text-align: center;
   justify-content: center;
   position: fixed;
   top: 0px;
   z-index: 999;
-  height:60px;
+  height: 60px;
+  background:#00000090;
+  box-shadow: 0px 3px 15px #0000001a;
+  backdrop-filter: blur(8px);
+  transition: all .4s ease;
 `;
 
 const ContenedorSecciones = styled.ul`
@@ -50,37 +56,25 @@ const ContenedorSecciones = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  animation: aparecer 1.5s ease;
-  align-self:center;
+  align-self: center;
   position: relative;
 `;
 
 const Secciones = styled.li`
   list-style: none;
-  align-self:center;
+  align-self: center;
   pointer-events: none;
   & > a {
     margin: auto 0px;
     text-decoration: none;
     font-size: 17px;
-    cursor: pointer;
     color: #ffffff;
     pointer-events: auto;
-    position:relative;
+    position: relative;
     letter-spacing: 1px;
   }
-  & > a:hover{
-    color:#ffffff99 ;
-  }
-  & > a {
-    @keyframes aparecer {
-    0% {
-      bottom:4rem;
-    }
-    100% {
-      bottom:0;
-    }
-  }
+  & > a:hover {
+    color: #ffffff99;
   }
 `;
 

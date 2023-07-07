@@ -4,57 +4,67 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  gap: 2rem;
 }
 .contenedorImagen {
-    width: 350px;
-    height: 65vh;
-    position: relative;
-    border-radius: 210px;
-    overflow: hidden;
-    margin: auto 0;
-    z-index: 666;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 310px;
+  height: 310px;
+  position: relative;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: auto 0;
+  z-index: 666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a0a0a;
+  border: 2px solid #ffffff;
 }
 .contenedorImagen .imagen1-sobreMi {
-    width: 60%;
-    height: auto;
-    position: absolute;
-    background: black;
+  width: 70%;
+  height: auto;
+  position: absolute;
+  background: #0a0a0a;
+  top: -18px;
 }
 
 .contenedorAside {
-    padding: 3rem 3rem 3rem 0;
-    width: 55%;
-    margin: auto 0;
-    position: relative;
-    z-index: 444;
-    border-radius: 10px;
-    background: #00000040;
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: auto 0;
+  gap: 0.5rem;
+  position: relative;
+  z-index: 444;
+  border-radius: 10px;
+  background: #00000040;
+  padding-top: 1.5rem;
 }
 .contenedorAside_titulo {
-    font-size: 4.5rem;
-    letter-spacing: 2px;
-    line-height: .8;
-    padding: 0rem 0rem 0rem 1rem;
-    color: #174fc1;
-    text-transform: uppercase;
+  font-size: 4.5rem;
+  letter-spacing: 2px;
+  line-height: .7;
+  color: #174fc1;
+  text-transform: uppercase;
+  text-shadow: 0px -1px 0px #9c9cff;
 }
-.contenedorAside_titulo > span{
-    color: #668ee0;
-    text-transform: capitalize;
-    font-size: 3rem;
-    font-style: italic;
-    font-weight: 100;
+.contenedorAside_subtitulo {
+  color: rgb(102, 142, 224);
+  text-transform: capitalize;
+  font-size: 3.5rem;
+  font-weight: 100;
+  text-shadow: rgb(198, 198, 255) 0px -1px 0px;
+  line-height: 1.5;
 }
 .contenedorAside_descripcion {
-    letter-spacing: 0.8px;
-    padding: 1rem 0rem 0rem 1rem;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    display: block;
-    width: 100%;
-    text-align: justify;
-    line-height: 1.7;
+  letter-spacing: 0.8px;
+  padding: 1rem 0rem 0rem 1rem;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  text-align: justify;
+  line-height: 1.7;
 }

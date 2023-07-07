@@ -4,6 +4,7 @@ import Header from "./componentes/Header";
 import Habilidades from "./componentes/Habilidades";
 import Proyectos from "./componentes/Proyectos";
 import Fondo from './componentes/Fondo';
+import BotonSubirTodo from './elementos/BotonSubirTodo';
 
 const App = () => {
 
@@ -13,7 +14,8 @@ const App = () => {
         <Header />
         <SobreMi />
         <Habilidades/>
-         <Proyectos />
+        <Proyectos />
+        <BotonSubirTodo/>
     </>
 );
 }

@@ -1,88 +1,168 @@
-.contenedor_misProyectos{
-    max-width:100%;
-    height: 100%;
-    position: relative;
-    background:#f5f5f5;
+.contenedor_misProyectos {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  background: rgb(198, 198, 255);
+  z-index: 999;
 }
-.misProyectos{
-    width:100%;
-    height:100vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    
+.misProyectos {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.contenedor-proyectos__misProyectos{
-    width: 350px;
-    margin: auto;
-    position: relative;
-    flex-direction: column;
-    box-shadow: 0px 5px 10px #00000076;
-    align-content: center;
+.contenedor-proyectos__misProyectos {
+  width: 480px;
+  height: 280px;
+  margin: auto;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  box-shadow: 0px 0px 12px #00000070;
+  border-radius: 10px;
 }
-.contenedor-imagen__misProyectos{
-    width: 100%;
-    height: 49%;
-    background: #000000;
-    transition: 0.4s all ease;
-    padding-bottom: 70%;
-    opacity: 1;
-    border-radius: 4px;
-}
-
-
-.imagen-proyecto__misProyectos{
-    position: absolute;
-    background: #000000;
-    top: 4em;
-    left: 6.7em;
-}
-.contenedor-hover-imagen__misProyectos{
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: 0.3s all ease;
-    z-index: 777;
-}
-.contenedor-hover-imagen__misProyectos:hover{
-    opacity: 1;
-
-}
-.contenedor-icon-hover__misProyectos{
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    padding-bottom: 30%;
-    gap: 26px;
-}
-.icon-hover-imagen__misProyectos{
-    width:4rem;
-    height:4rem;
-}
-.contenedor-descripcion__misProyectos{
-    width: 100%;
-    height: 50%;
-    padding-top: 15%;
-    background: #0c0c0c;
-    border: 1px solid #0c0c0c;
-    font-family: "Roboto Slab", serif;
-    padding: 5px;
+.contenedor-imagen__misProyectos {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #000000;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-
-.titulo-descripcion__misProyectos{
-    color: #6161ff;
-    letter-spacing: 2px;
-    font-size: 26px;
-    margin: 5px 0;
-    font-weight: 200;
+.imagen-proyecto__misProyectos {
+  width: 100%;
+  background: rgb(0, 0, 0);
+}
+.contenedor-hover__misProyectos {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto Slab", serif;
+  border-radius: 10px;
+  border: 1px solid #f5f5f5;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+.contenedor-hover__misProyectos:hover {
+  opacity: 1;
+  backdrop-filter: blur(5px) brightness(0.9);
+  background: #00000090;
 }
 
+.header_misProyectos {
+  height: 25%;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  padding: 0.6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo_misProyectos {
+  font-size: 34px;
+  text-shadow: 0 -1px 10px #000000;
+  font-weight: 200;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+}
+
+.enlace-repositorio_misProyectos {
+  border-radius: 99px;
+  width: 55px;
+  height: 57px;
+  position: relative;
+  overflow: visible;
+  background: #fff;
+  align-self: center;
+}
+
+.logoGitHub_misProyectos {
+  position: absolute;
+  left: -2px;
+  top: -3px;
+  width: 60px;
+}
+
+.boton_misProyectos {
+  position: relative;
+  width: 20%;
+  background: cornflowerblue;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  overflow: hidden;
+  padding: 1.3rem;
+}
+.boton_misProyectos::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 160px;
+  height: 100%;
+  background:#9c9cff ;
+  opacity: 0;
+  transform: skewX(311deg) translateX(-220px);
+  transform-origin: left;
+  transition: all 0.4s ease;
+}
+.boton_misProyectos:hover:before {
+  transform: skewX(311deg) translateX(-40px);
+  left: 20px;
+  opacity: 1;
+}
+
+.enlace_misProyectos {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: system-ui;
+  z-index: 888;
+}
+.contenedor-descripcion-logos_misProyectos {
+  display: flex;
+  flex-flow: row wrap;
+  height: 75%;
+  justify-content: space-evenly;
+}
+.contenedor-descripcion_misProyectos {
+  width: 70%;
+  height: 100%;
+  border-radius: 0 0 10px 10px;
+}
+
+.descripcion_misProyectos {
+  font-size: 1rem;
+  font-family: system-ui;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  margin: 0.8rem 0 0.8rem 1.5rem;
+  line-height: 1.75rem;
+  text-shadow: 0 -1px 10px black;
+}
+
+.contenedor-logos_misProyectos {
+  display: flex;
+  flex-flow: column wrap-reverse;
+  max-height: 100%;
+  width: 28%;
+  justify-content: space-evenly;
+}
+.logos_misProyectos {
+  width: 64px;
+  height: auto;
+}

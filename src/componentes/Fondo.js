@@ -6,7 +6,7 @@ import styled from "styled-components";
 const Fondo = () => {
   return (
     <ContenedorFondo>
-      <FondoVideo loop muted poster={poster} autoPlay src={fondo}></FondoVideo>
+      <FondoVideo loop muted poster={poster} src={fondo}></FondoVideo>
     </ContenedorFondo>
   );
 };
