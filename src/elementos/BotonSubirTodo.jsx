@@ -32,6 +32,7 @@ const ContenedorFlecha = styled.button`
   transition: all 0.3s ease;
   z-index: 999;
   opacity: 0;
+  pointer-events: none;
   &:hover {
     background: #678cd9;
     box-shadow: #00000037 0px 4px 5px;

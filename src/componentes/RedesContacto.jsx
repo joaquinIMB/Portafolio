@@ -8,18 +8,30 @@ const RedesContacto = () => {
   return (
     <ListaDesordenada>
       <li>
-        <Enlace href="" target="_blank" rel="noreferrer">
-          <Logo src={logoInstagram}/>
+        <Enlace
+          href="https://www.instagram.com/joaquinexequiell/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Logo src={logoInstagram} />
         </Enlace>
       </li>
       <li>
-        <Enlace href="" target="_blank" rel="noreferrer">
-          <Logo src={logoLinkedIn}/>
+        <Enlace
+          href="https://www.linkedin.com/in/joaquin-imbriago"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Logo src={logoLinkedIn} />
         </Enlace>
       </li>
       <li>
-        <Enlace href="" target="_blank" rel="noreferrer">
-          <Logo src={logoCv}/>
+        <Enlace
+          href="https://drive.google.com/file/d/1floNk0KLDWtbT4wul0L84_PwQOLj5BH3/view?usp=drive_link"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Logo src={logoCv} />
         </Enlace>
       </li>
     </ListaDesordenada>
@@ -30,7 +42,7 @@ const Logo = styled.img`
   fill: #ffffff;
   width: 2.5rem;
   height: auto;
-`
+`;
 const ListaDesordenada = styled.ul`
   list-style: none;
   display: flex;

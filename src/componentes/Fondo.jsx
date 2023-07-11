@@ -13,14 +13,14 @@ const Fondo = () => {
 
 const ContenedorFondo = styled.div`
   position: absolute;
+  height: 100vh;
+  overflow: hidden;
 `;
 
 const FondoVideo = styled.video`
   width: 100%;
   height: auto;
-  position: fixed;
-  top: 0px;
-  left: 0px;
+  position: static;
   filter: brightness(0.3) grayscale(0.5);
 `;
 

@@ -1,20 +1,21 @@
 .contenedor_misProyectos {
   max-width: 100%;
-  height: 100%;
+  height: 100vh;
   position: relative;
   background: rgb(198, 198, 255);
-  z-index: 999;
 }
 .misProyectos {
   width: 100%;
-  height: 100vh;
+  height: 98vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 1.2rem;
+  align-content: flex-end;
 }
 .contenedor-proyectos__misProyectos {
-  width: 480px;
-  height: 280px;
+  width: 450px;
+  height: 260px;
   margin: auto;
   position: relative;
   flex-direction: column;
@@ -65,7 +66,7 @@
 }
 
 .titulo_misProyectos {
-  font-size: 34px;
+  font-size: 28px;
   text-shadow: 0 -1px 10px #000000;
   font-weight: 200;
   color: rgb(255, 255, 255);
@@ -74,8 +75,8 @@
 
 .enlace-repositorio_misProyectos {
   border-radius: 99px;
-  width: 55px;
-  height: 57px;
+  width: 46px;
+  height: 48px;
   position: relative;
   overflow: visible;
   background: #fff;
@@ -86,7 +87,7 @@
   position: absolute;
   left: -2px;
   top: -3px;
-  width: 60px;
+  width: 50px;
 }
 
 .boton_misProyectos {
@@ -94,7 +95,7 @@
   width: 20%;
   background: cornflowerblue;
   border-radius: 10px;
-  border: 2px solid #ffffff;
+  border:none;
   overflow: hidden;
   padding: 1.3rem;
 }
@@ -105,8 +106,8 @@
   top: 0;
   width: 160px;
   height: 100%;
-  background:#9c9cff ;
-  opacity: 0;
+  background:#174fc1 ;
+  opacity: .5;
   transform: skewX(311deg) translateX(-220px);
   transform-origin: left;
   transition: all 0.4s ease;
@@ -145,13 +146,13 @@
 }
 
 .descripcion_misProyectos {
-  font-size: 1rem;
+  font-size: 18px;
   font-family: system-ui;
   font-weight: 400;
   color: rgb(255, 255, 255);
-  letter-spacing: 1px;
-  margin: 0.8rem 0 0.8rem 1.5rem;
-  line-height: 1.75rem;
+  letter-spacing: 1.2px;
+  margin: 0 0 0rem 0.8rem;
+  line-height: 1.65rem;
   text-shadow: 0 -1px 10px black;
 }
 
@@ -159,10 +160,10 @@
   display: flex;
   flex-flow: column wrap-reverse;
   max-height: 100%;
-  width: 28%;
-  justify-content: space-evenly;
+  width: 25%;
+  justify-content: flex-start;
 }
 .logos_misProyectos {
-  width: 64px;
+  width: 62px;
   height: auto;
 }

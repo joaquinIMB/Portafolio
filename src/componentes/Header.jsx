@@ -1,13 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import {ReactComponent as IconoHome} from "./../assets/img/Icons/home.svg"
 
-const Header = () => {
+const Header = ({cambiarAbrirPortafolio}) => {
   window.addEventListener("scroll", () => {
     let contenedorHeader = document.getElementById("contenedorHeader");
-    if (window.scrollY > 60) {
-      contenedorHeader.style.display = "flex";
+    if (window.scrollY > 30) {
+      contenedorHeader.style.boxShadow = "0px 3px 12px #00000060";
+      contenedorHeader.style.backdropFilter = "blur(8px)";
+      contenedorHeader.style.background = "#0000007d";
     } else {
-      contenedorHeader.style.display = "none";
+      contenedorHeader.style.boxShadow = "0";
+      contenedorHeader.style.backdropFilter = "none";
+      contenedorHeader.style.background = "none";
     }
   });
 
@@ -15,13 +20,18 @@ const Header = () => {
     <>
       <ContenedorHeader id="contenedorHeader">
         <ContenedorSecciones>
+        <Secciones>
+            <a className="enlace" href="#home" onClick={() => cambiarAbrirPortafolio(false)}>
+              <Home/>
+            </a>
+          </Secciones>
           <Secciones>
             <a className="enlace" href="#sobre-mi">
               Sobre mi
             </a>
           </Secciones>
           <Secciones>
-            <a className="enlace" href="#sobre-mi">
+            <a className="enlace" href="#habilidades">
               Habilidades
             </a>
           </Secciones>
@@ -38,17 +48,16 @@ const Header = () => {
 
 const ContenedorHeader = styled.div`
   width: 100%;
-  display:none;
+  display: flex;
   text-align: center;
   justify-content: center;
   position: fixed;
   top: 0px;
   z-index: 999;
   height: 60px;
-  background:#00000090;
   box-shadow: 0px 3px 15px #0000001a;
   backdrop-filter: blur(8px);
-  transition: all .4s ease;
+  transition: all 0.3s ease;
 `;
 
 const ContenedorSecciones = styled.ul`
@@ -78,4 +87,8 @@ const Secciones = styled.li`
   }
 `;
 
+const Home = styled(IconoHome)`
+fill: #ffffff;
+height: auto;
+`
 export default Header;
