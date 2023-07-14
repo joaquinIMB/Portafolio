@@ -1,0 +1,101 @@
+.contenedor-formulario_contacto {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #9c9cff 35%, #435e94d1);
+}
+.formulario_contacto {
+  height: 80vh;
+  width: 30%;
+  background: rgb(13 22 41);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  padding: 1rem 2.5rem;
+  margin: 6rem auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 8px #000000;
+}
+.label_contacto {
+  font-size: 1rem;
+  color: #e5e5e5;
+  text-shadow: 0px 2px 10px black;
+}
+.input_contacto {
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  border: 2px solid #cccccc;
+  outline: none;
+  font-size: 1.35rem;
+  background: rgb(21, 33, 59);
+  color: #ffffff;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  transform-origin: bottom;
+}
+.input_contacto:focus {
+  border: 2px solid #323295;
+  box-shadow: 0px 2px 4px #000000;
+  transform: scale(1.05);
+}
+.input_contacto:user-valid{
+    border: 2px solid #323295;
+}
+.mensaje_contacto {
+  height: 150px;
+  resize: none;
+  outline: none;
+  font-size: 1.35rem;
+  font-weight: 100;
+  padding: 0.5rem;
+  color: #ffffff;
+  border-radius: 4px;
+  background: rgb(21, 33, 59);
+  border: 2px solid #cccccc;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+.mensaje_contacto:focus {
+  border: 2px solid #323295;
+  box-shadow: 0px 2px 6px #000000;
+  transform: scale(1.05);
+}
+.boton_contacto {
+  padding: 0.5rem 1rem;
+  width: 40%;
+  margin: 0.5rem auto 0rem;
+  color: #ececec;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: system-ui;
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+  background: #000000;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.boton_contacto > span{
+  position: relative;
+  z-index: 999;
+}
+.boton_contacto::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 180px;
+  height: 100%;
+  background: rgb(103, 140, 217);
+  opacity: 1;
+  z-index: 3;
+  transform: skewX(311deg) translateX(-210px);
+  transform-origin: left;
+  transition: all 0.4s ease;
+}
+.boton_contacto:hover:before {
+  transform: skewX(311deg) translateX(-50px);
+  left: 20px;
+  opacity: 1;
+}

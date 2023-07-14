@@ -1,6 +1,6 @@
 import React from "react";
 import "./habilidades.css";
-import { logos } from "../elementos/logos";
+import { logos } from "./../../elementos/logos";
 
 const Habilidades = () => {
   return (

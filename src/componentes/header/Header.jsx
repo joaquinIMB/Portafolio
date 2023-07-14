@@ -8,7 +8,7 @@ const Header = () => {
       contenedorHeader.style.top = "0px"
       contenedorHeader.style.boxShadow = "0px 3px 12px #00000060";
       contenedorHeader.style.backdropFilter = "none";
-      contenedorHeader.style.background = "#000000";
+      contenedorHeader.style.background = "rgb(13 22 41)";
     }
      else {
       contenedorHeader.style.top = "-60px"
@@ -37,6 +37,11 @@ const Header = () => {
               Proyectos
             </a>
           </Secciones>
+          <Secciones>
+            <a className="enlace" href="#contacto">
+              Contacto
+            </a>
+          </Secciones>
         </ContenedorSecciones>
       </ContenedorHeader>
     </>
@@ -61,7 +66,7 @@ const ContenedorSecciones = styled.ul`
   width: 35%;
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-self: center;
   position: relative;
 `;

@@ -28,13 +28,12 @@ const ContenedorFlecha = styled.button`
   width: 65px;
   background: cornflowerblue;
   height: 65px;
-  box-shadow: 0px 0px 3px #0000006a;
+  box-shadow: 0px 0px 2px #0000006a;
   transition: all 0.3s ease;
   z-index: 999;
   opacity: 0;
   pointer-events: none;
   &:hover {
-    background: rgb(103, 140, 217);
     box-shadow: rgb(0 0 0 / 52%) 0px 4px 4px;
   }
 `;

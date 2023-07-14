@@ -1,13 +1,13 @@
 import React from "react";
 import "./sobreMi.css";
-import imagenSobreMi from "./../assets/img/imagenSobreMi.jpeg";
+import imagenSobreMi from "./../../assets/img/imagenSobreMi.jpeg";
 
 const SobreMi = () => {
   return (
     <section className="contenedor_SobreMi" id="sobre-mi">
       <article className="contenedor-descripcion_SobreMi">
         <p className="descripcion-SobreMi parrafo1">
-          Desde pequeño me apasiona la
+         ¡Hola! Mi nombre es <span className="tags">Joaquin</span>. Desde pequeño me apasiona la
           <span className="tags"> tecnologia </span> y sus distintas ramas.
           Aprendí a <span className="tags"> desarrollar </span> por mi cuenta,
           principalmente utilizando la plataforma

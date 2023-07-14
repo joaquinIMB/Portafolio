@@ -1,9 +1,9 @@
 import React from "react";
 import "./home.css";
 import styled from "styled-components";
-import imagenJoaquin from "./../assets/img/retrato.png";
+import imagenJoaquin from "./../../assets/img/retrato.png";
 import RedesContacto from "./RedesContacto";
-import {ReactComponent as IconoFlecha} from "./../assets/img/Icons/arrow.svg"
+import {ReactComponent as IconoFlecha} from "./../../assets/img/Icons/arrow.svg"
 
 const Home = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import "./proyectos.css";
-import { misProyectos } from "../elementos/misProyectos";
-import logoGitHub from "./../assets/img/Icons/GitHub.png";
+import { misProyectos } from "../../elementos/misProyectos";
+import logoGitHub from "./../../assets/img/Icons/GitHub.png";
 const AgregaProyecto = () => {
   return (
     <>

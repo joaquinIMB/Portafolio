@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import logoInstagram from "./../assets/img/instagram.png";
-import logoLinkedIn from "./../assets/img/linkedIn.png";
-import logoCv from "./../assets/img/cv.png";
+import logoInstagram from "./../../assets/img/instagram.png";
+import logoLinkedIn from "./../../assets/img/linkedIn.png";
+import logoCv from "./../../assets/img/cv.png";
 
 const RedesContacto = () => {
   return (
@@ -49,7 +49,7 @@ const ListaDesordenada = styled.ul`
   flex-flow: row wrap;
   justify-content: left;
   gap: 1.2rem;
-  width: 30%;
+  width: 35%;
   align-content: center;
   text-align: center;
 `;

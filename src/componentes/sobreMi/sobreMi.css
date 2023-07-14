@@ -8,7 +8,7 @@
     gap: 2rem;
     z-index: 777;
     align-items: center;
-    background: linear-gradient(180deg, #ffffff, #f5f5f5);
+    background: #f5f5f5;
 }
 .contenedor-descripcion_SobreMi{
     width: 40%;
@@ -40,8 +40,8 @@
     position: absolute;
 }
 .tags{
-    color: rgb(102, 142, 224);
-    font-weight: 600;
+    color: rgb(63, 103, 184);
+    font-weight: 400;
 }
 
 .parrafo1{
