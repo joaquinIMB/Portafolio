@@ -1,15 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import {ReactComponent as IconoHome} from "./../assets/img/Icons/home.svg"
 
-const Header = ({cambiarAbrirPortafolio}) => {
+const Header = () => {
   window.addEventListener("scroll", () => {
     let contenedorHeader = document.getElementById("contenedorHeader");
-    if (window.scrollY > 30) {
+    if(window.scrollY >= 590){
+      contenedorHeader.style.top = "0px"
       contenedorHeader.style.boxShadow = "0px 3px 12px #00000060";
-      contenedorHeader.style.backdropFilter = "blur(8px)";
-      contenedorHeader.style.background = "#0000007d";
-    } else {
+      contenedorHeader.style.backdropFilter = "none";
+      contenedorHeader.style.background = "#000000";
+    }
+     else {
+      contenedorHeader.style.top = "-60px"
       contenedorHeader.style.boxShadow = "0";
       contenedorHeader.style.backdropFilter = "none";
       contenedorHeader.style.background = "none";
@@ -20,11 +22,6 @@ const Header = ({cambiarAbrirPortafolio}) => {
     <>
       <ContenedorHeader id="contenedorHeader">
         <ContenedorSecciones>
-        <Secciones>
-            <a className="enlace" href="#home" onClick={() => cambiarAbrirPortafolio(false)}>
-              <Home/>
-            </a>
-          </Secciones>
           <Secciones>
             <a className="enlace" href="#sobre-mi">
               Sobre mi
@@ -52,12 +49,12 @@ const ContenedorHeader = styled.div`
   text-align: center;
   justify-content: center;
   position: fixed;
-  top: 0px;
+  top: -60px;
   z-index: 999;
   height: 60px;
   box-shadow: 0px 3px 15px #0000001a;
   backdrop-filter: blur(8px);
-  transition: all 0.3s ease;
+  transition:all .3s ease;
 `;
 
 const ContenedorSecciones = styled.ul`
@@ -87,8 +84,4 @@ const Secciones = styled.li`
   }
 `;
 
-const Home = styled(IconoHome)`
-fill: #ffffff;
-height: auto;
-`
 export default Header;

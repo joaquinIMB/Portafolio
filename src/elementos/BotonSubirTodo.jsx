@@ -14,7 +14,7 @@ const BotonSubirTodo = () => {
   });
   return (
     <ContenedorFlecha id="flecha">
-      <Flecha href="#sobre-mi">↑</Flecha>
+      <Flecha href="#home">↑</Flecha>
     </ContenedorFlecha>
   );
 };
@@ -34,8 +34,8 @@ const ContenedorFlecha = styled.button`
   opacity: 0;
   pointer-events: none;
   &:hover {
-    background: #678cd9;
-    box-shadow: #00000037 0px 4px 5px;
+    background: rgb(103, 140, 217);
+    box-shadow: rgb(0 0 0 / 52%) 0px 4px 4px;
   }
 `;
 

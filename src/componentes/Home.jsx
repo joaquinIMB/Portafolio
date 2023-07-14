@@ -1,9 +1,11 @@
 import React from "react";
 import "./home.css";
+import styled from "styled-components";
 import imagenJoaquin from "./../assets/img/retrato.png";
 import RedesContacto from "./RedesContacto";
+import {ReactComponent as IconoFlecha} from "./../assets/img/Icons/arrow.svg"
 
-const Home = ({cambiarAbrirPortafolio}) => {
+const Home = () => {
   return (
     <>
       <section className="contenedor_Home" id="home">
@@ -18,21 +20,30 @@ const Home = ({cambiarAbrirPortafolio}) => {
           <h1 className="titulo_Home">Desarrollador</h1>
           <h2 className="subtitulo_Home">Front-end</h2>
           <RedesContacto />
-          <div className="contenedor-botones-Home">
-            <button className="boton-contacto-Home">Contacto</button>
-            <button className="boton-sobreMi-Home" onClick={() => cambiarAbrirPortafolio(true)}>
-              <a href="#sobre-mi" className="enlace-boton-sobreMi_Home">
-              Sobre mi
-              </a>
-              </button>
-          </div>
         </aside>
       </section>
-      {/* <p className="descripcion-sobreMi">
-      Tengo 22 años y soy argentino. Aprendí a programar por mi cuenta, principalmente utilizando la plataforma Udemy. Destaco entre otras aptitudes, mi constancia y responsabilidad a la hora de realizar proyectos, además de mis habilidades interpersonales. Espero con ansias mi primer oportunidad laboral para poner en práctica todo lo experimentado en mi etapa de aprendizaje.
-      </p> */}
+      <Flecha/>
     </>
   );
 };
+
+const Flecha = styled(IconoFlecha)`
+fill:#ffffff;
+position:absolute;
+bottom: 15px;
+left:50%;
+transform:rotate(90deg) scale(2);
+animation: movimiento 0.8s infinite;
+@keyframes movimiento {
+  0%{
+    bottom: 15px;
+    transform:rotate(90deg) scale(2);
+  }
+  100%{
+    bottom: 5px;
+    transform: rotate(90deg) scale(1.5);
+  }
+}
+`
 
 export default Home;

@@ -8,14 +8,7 @@ const AgregaProyecto = () => {
       {misProyectos.map((proyecto) => {
         return (
           <div key={proyecto.id} className="contenedor-proyectos__misProyectos">
-            <div className="contenedor-imagen__misProyectos">
-              <img
-                src={proyecto.imagen}
-                alt={proyecto.titulo}
-                className="imagen-proyecto__misProyectos"
-              />
-            </div>
-            <div className="contenedor-hover__misProyectos">
+            <div className="hover_misProyectos">
               <header className="header_misProyectos">
                 <a
                   className="enlace-repositorio_misProyectos"
@@ -29,7 +22,6 @@ const AgregaProyecto = () => {
                     alt="Enlace para ir al repositorio"
                   />
                 </a>
-                <h2 className="titulo_misProyectos">{proyecto.titulo}</h2>
                 <button className="boton_misProyectos">
                   <a
                     className="enlace_misProyectos"
@@ -41,6 +33,16 @@ const AgregaProyecto = () => {
                   </a>
                 </button>
               </header>
+              <h2 className="titulo_misProyectos">{proyecto.titulo}</h2>
+            </div>
+            <div className="contenedor-imagen__misProyectos">
+              <img
+                src={proyecto.imagen}
+                alt={proyecto.titulo}
+                className="imagen-proyecto__misProyectos"
+              />
+            </div>
+            <div className="contenedor-hover__misProyectos" id="contieneHover">
               <section className="contenedor-descripcion-logos_misProyectos">
                 <article className="contenedor-descripcion_misProyectos">
                   {proyecto.descripcion && (
@@ -49,17 +51,17 @@ const AgregaProyecto = () => {
                     </p>
                   )}
                 </article>
-                <aside className="contenedor-logos_misProyectos">
-                  {proyecto.logos.map((logoProyecto, index) => (
-                    <img
-                      key={index}
-                      className="logos_misProyectos"
-                      src={logoProyecto}
-                      alt={`${logoProyecto} proyecto ${index}`}
-                    />
-                  ))}
-                </aside>
               </section>
+              <footer className="contenedor-logos_misProyectos">
+                {proyecto.logos.map((logoProyecto, index) => (
+                  <img
+                    key={index}
+                    className="logos_misProyectos"
+                    src={logoProyecto}
+                    alt={`${logoProyecto} proyecto ${index}`}
+                  />
+                ))}
+              </footer>
             </div>
           </div>
         );

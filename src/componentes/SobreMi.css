@@ -8,6 +8,7 @@
     gap: 2rem;
     z-index: 777;
     align-items: center;
+    background: linear-gradient(180deg, #ffffff, #f5f5f5);
 }
 .contenedor-descripcion_SobreMi{
     width: 40%;
@@ -15,7 +16,7 @@
 .contenedor-descripcion_SobreMi .descripcion-SobreMi{
     line-height: 1.6;
     letter-spacing: 1.5px;
-    color: #f5f5f5;
+    color: #000000;
     font-size: 18px;
     font-weight: 100;
     padding-top: 1.25rem;
@@ -30,6 +31,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    box-shadow: 0px 4px 8px #00000060;
 }
 .imagen_SobreMi{
     width: 100%;
